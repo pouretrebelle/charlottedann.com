@@ -8,7 +8,10 @@ $pink-squiggle: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My
 $yellow-squiggle: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1IDMiPjxzdHlsZT5Aa2V5ZnJhbWVzIHNoaWZ0IHsgIGZyb20geyAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoMCk7ICB9ICB0byB7ICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgtNXB4KTsgIH19PC9zdHlsZT48cGF0aCBkPSJNMCAyLjVjMS4zIDAgMS4zLTIgMi41LTJzMS4zIDIgMi41IDIgMS4zLTIgMi41LTIgMS4zIDIgMi41IDIiIHN0eWxlPSJhbmltYXRpb246IHNoaWZ0IC41cyBsaW5lYXIgaW5maW5pdGU7IGZpbGw6IG5vbmU7IHN0cm9rZTogI0Q3RTIwMDsiLz48L3N2Zz4=)
 
 body
-  display: block
+  display: flex
+  align-items: center
+  justify-content: center
+  min-height: 100vh
   background: white
 
 body,
@@ -35,7 +38,7 @@ a
     background-position: 0 50%
     background-size: auto 0.5em
     background-repeat: repeat-x
-  
+
 p
   line-height: 9vmin
   margin: 0
@@ -47,10 +50,10 @@ p
   padding-right: 0.1ch
 
 .hello
-  font-size: 8vmin
-  padding: 8vmin
+  font-size: 7.5vmin
+  padding: 5vmin
   max-width: 100vmin
-  margin: 0 auto
+  margin: 0
 
 .h
   margin-left: 0.1ch
@@ -99,6 +102,7 @@ p
   pointer-events: none
 
 .form-input
+  width: 22ch
   &::placeholder
     color: $text
   &:focus
