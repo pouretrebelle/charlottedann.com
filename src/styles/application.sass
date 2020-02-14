@@ -7,10 +7,6 @@ $green: #08AF6A
 $pink-squiggle: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1IDMiPjxzdHlsZT5Aa2V5ZnJhbWVzIHNoaWZ0IHsgIGZyb20geyAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoMCk7ICB9ICB0byB7ICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgtNXB4KTsgIH19PC9zdHlsZT48cGF0aCBkPSJNMCAyLjVjMS4zIDAgMS4zLTIgMi41LTJzMS4zIDIgMi41IDIgMS4zLTIgMi41LTIgMS4zIDIgMi41IDIiIHN0eWxlPSJhbmltYXRpb246IHNoaWZ0IC41cyBsaW5lYXIgaW5maW5pdGU7IGZpbGw6IG5vbmU7IHN0cm9rZTogI0ZGMDBFMTsiLz48L3N2Zz4=)
 $yellow-squiggle: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1IDMiPjxzdHlsZT5Aa2V5ZnJhbWVzIHNoaWZ0IHsgIGZyb20geyAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoMCk7ICB9ICB0byB7ICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgtNXB4KTsgIH19PC9zdHlsZT48cGF0aCBkPSJNMCAyLjVjMS4zIDAgMS4zLTIgMi41LTJzMS4zIDIgMi41IDIgMS4zLTIgMi41LTIgMS4zIDIgMi41IDIiIHN0eWxlPSJhbmltYXRpb246IHNoaWZ0IC41cyBsaW5lYXIgaW5maW5pdGU7IGZpbGw6IG5vbmU7IHN0cm9rZTogI0Q3RTIwMDsiLz48L3N2Zz4=)
 
-body
-  display: block
-  background: white
-
 body,
 input
   font-family: azote, serif
@@ -19,7 +15,12 @@ input
   margin: 0
   color: $text
   line-height: 1
-  
+  background: transparent
+
+body
+  display: block
+  background: white
+
 ::selection
   background: white
   color: $green
@@ -40,6 +41,12 @@ p
   line-height: 9vmin
   margin: 0
   position: relative
+
+.background
+  position: fixed
+  top: 0
+  left: 0
+  z-index: -1
   
 .name
   display: inline-block
@@ -102,7 +109,7 @@ p
   &::placeholder
     color: $text
   &:focus
-    color: $green
+    color: $link
     + .form-shadow
       background-image: $yellow-squiggle
       background-position: 0 1em

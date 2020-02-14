@@ -1,4 +1,6 @@
 import './styles/application.sass';
+import './scripts/background';
+
 import './assets/favicon-16.png';
 import './assets/favicon-32.png';
 import './assets/favicon-57.png';
